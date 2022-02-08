@@ -16,7 +16,7 @@
             v-on:keypress="goMeteo">
         </div>   
 
-        <div class="border border-3 w-50 m-auto" v-if="temps">
+        <div class="w-50 m-auto" v-if="temps">
             <h3 class="text-center mb-3">{{temps.name}}</h3>
             <div class="card text-center p-5">
                 <p class="text-affichage">
