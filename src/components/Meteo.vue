@@ -3,7 +3,7 @@
     <div class="container"> 
 
         <h1 class="text-center fw-bold mt-5">
-        {{ txt }} :
+        {{ txt }}
         </h1>   
 
         <div class="form-group mb-5">
@@ -16,7 +16,7 @@
             v-on:keypress="goMeteo">
         </div>   
 
-        <div class="w-75 m-auto" v-if="temps">
+        <div class="border border-3 w-50 m-auto" v-if="temps">
             <h3 class="text-center mb-3">{{temps.name}}</h3>
             <div class="card text-center p-5">
                 <p class="text-affichage">
@@ -47,7 +47,7 @@ export default {
     name: 'Meteo',
     data() {
         return {
-            txt: 'Application météo avec Vue',
+            txt: 'WeatherApp.com',
             requete: '',
             temps: undefined,
             api_code: 'cacdeacebccaa820f7c84aff5f58ca6c',
