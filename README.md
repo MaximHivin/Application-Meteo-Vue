@@ -1,24 +1,15 @@
-# app-meteo
+# Création d'une Application Météo avec Vue
 
-## Project setup
-```
-npm install
-```
+## Projet pour s'exercer avec une API
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Ici j'utilise l'API de openweathermap
 
-### Compiles and minifies for production
-```
-npm run build
-```
+https://openweathermap.org/
 
-### Lints and fixes files
-```
-npm run lint
-```
+Ici j'essaye de récuperer des données pour les afficher dans ma petite application.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+J'utilise donc Vue, Bootstrap pour le CSS et axios pour générer mes appels API.
+
+
+
+
