@@ -2,12 +2,16 @@
     
     <div class="container"> 
 
-        <h1 class="text-center fw-bold mt-5">
+        <div class="d-flex justify-content-center">
+            <img class="logo" src="../assets/images/LogoAppMeteo.png" alt="">
+        </div>
+
+        <h1 class="text-center fw-bold">
         {{ txt }}
         </h1>   
 
-        <div class="form-group mb-5">
-            <label for="position" class="mt-5 p-2 fw-bold">Entrez le nom d'une ville</label>
+        <div class="form-group mb-4 w-50 m-auto text-center fs-4">
+            <label for="position" class="mt-2 p-2 fw-bold">Entrez le nom d'une ville</label>
             <input 
             id="position"
             type="text"
@@ -17,8 +21,8 @@
         </div>   
 
         <div class="w-50 m-auto" v-if="temps">
-            <h3 class="text-center mb-3">{{temps.name}}</h3>
-            <div class="card text-center p-5">
+            <h3 class="text-center mb-3 fw-bold">{{temps.name}}</h3>
+            <div class="card text-center p-4">
                 <p class="text-affichage">
                     Temperature: {{temps.main.temp.toFixed()}}°
                 </p>
@@ -47,7 +51,7 @@ export default {
     name: 'Meteo',
     data() {
         return {
-            txt: 'WeatherApp.com',
+            txt: '',
             requete: '',
             temps: undefined,
             api_code: 'cacdeacebccaa820f7c84aff5f58ca6c',
@@ -78,8 +82,13 @@ export default {
 
 <style scoped>
 
+    .logo {
+        width: 500px;
+        height: 400px; 
+        
+    }
     .text-affichage {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.2;
     }
